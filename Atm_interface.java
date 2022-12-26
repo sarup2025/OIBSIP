@@ -21,6 +21,7 @@ public class Atm_interface {
                 case 1->{
                     System.out.println("Enter The Amount to Withdraw");
                     withdraw = in.nextInt();
+                    balance = balance - withdraw;
                     if (balance>=withdraw){
                         System.out.println("Collect Your Money");
                     } else {
